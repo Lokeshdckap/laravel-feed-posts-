@@ -62,5 +62,5 @@ Install Dependencies
 npm install
 
 Start React App
-npm start
+npm run dev
 React app will run at: http://localhost:5173
