@@ -46,8 +46,6 @@ function Dashboard() {
   return (
     <>
       <div className="header-row">
-        <h1>My Posts</h1>
-
         <Button type="primary" onClick={showModal}>
           Create Post
         </Button>
