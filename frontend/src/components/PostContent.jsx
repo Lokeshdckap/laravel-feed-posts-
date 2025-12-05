@@ -60,7 +60,7 @@ const PostContent = ({ isFetch }) => {
   return (
     <div style={{ maxWidth: "600px", margin: "0 auto", padding: "20px" }}>
       <Space direction="vertical" size="middle" style={{ width: "100%" }}>
-        {posts.map((post) => (
+        {posts?.map((post) => (
           <Card key={post.id} bordered>
             <h3
               style={{
