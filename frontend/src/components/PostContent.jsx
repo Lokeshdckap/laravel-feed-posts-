@@ -71,10 +71,15 @@ const PostContent = ({ isFetch }) => {
             >
               {post.title}
             </h3>
+
             <p
               style={{ marginBottom: "16px", color: "#333", lineHeight: "1.6" }}
             >
               {post.body}
+            </p>
+
+            <p style={{ fontWeight: "bold" }}>
+              Author name: {post?.user?.name}
             </p>
             <div style={{ paddingTop: "12px", borderTop: "1px solid #f0f0f0" }}>
               <button

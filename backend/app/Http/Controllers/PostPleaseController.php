@@ -12,7 +12,10 @@ class PostPleaseController extends Controller
     {
 
         $posts = Post::withCount('likes')
-                    ->with(['likes' => fn($q) => $q->where('user_id', auth()->user()->id)]) 
+                     ->with([
+                            'likes' => fn($q) => $q->where('user_id', auth()->id()),
+                            'user:id,name'
+                    ])
                     ->latest()
                     ->get()
                     ->map(function ($post) {
